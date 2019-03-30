@@ -2,8 +2,15 @@ body {
     font-family: Helvetica, sans-serif;
 }
 
+header{
+    border-bottom: 1px solid #ccc;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
 header li{
     display: inline-block;
+    margin-left: 3em;
 }
 
 #contato li {
@@ -16,9 +23,14 @@ margin: 1em;
     padding-right: 10%;
 }
 
+section{
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
 .identificacao {
-    background-color: #579FF0;
-    color: #FCFCFD;
+    background-color: #8B475D;
+    color: #FFF0F5;
     padding: 7em 2em;
 }
 
@@ -34,32 +46,56 @@ margin: 1em;
 
 section h3 {
     font-size: 1.7em;
+    margin-bottom: 0.5em;
 }
 
 header li a {
     color: #99A0B0;
+    font-weight: lighter;
 }
 
 .escuras {
-    background-color: #2B313E;
-    color: #FCFCFD;
+    background-color: #CD5C5C;
+    color: #FFF0F5;
 }
 
 .claras{
-background-color: #FCFCFD;
-color: #2b313e;;
+background-color: #fff0f5;
+color: #CD5C5C;;
 }
 
 .styleprojetos li{
-    background-color: #6F768B;
+    background-color: #FFA07A;
+    padding: 1em;
+    margin-bottom: 2em;
 }    
 
 
 .styleprojetos li a{
-    color: #ffffff;
+    color: #fff0f5;
     font-size: 1.3em;
+}
+
+.styleprojetos li p{
+    color: #fff0f5;
+    margin-top: 0.5em; 
+}
+
+#sobre p.text{
+    margin:1em;
+}
+
+#sobre p.bio{
+    color: #8B475D;
+    font-size: 1.5em;
+    margin: 1em;
 }
 
 #sobre img{
     width: 200px;
+}
+
+footer {
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
