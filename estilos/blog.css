@@ -42,7 +42,35 @@ header li{
 
 #contato li {
 display: inline-block;
+}
+
+#contato li a {
+display: inline-block;
 margin: 1em;
+width: 48px;
+height: 48px;
+text-indent: -9999px;
+
+}
+
+#contato .email {
+background-image: url("../Imagens/email.png");
+}
+
+#contato .twitter {
+    background-image: url("../Imagens/twitter.png");
+}
+
+#contato .fb {
+    background-image: url("../Imagens/fb.png");
+}
+
+#contato .github {
+    background-image: url("../Imagens/github.png");
+}
+
+#contato .linkedin {
+    background-image: url("../Imagens/linkedin.png");
 }
 
 .container {
@@ -94,6 +122,11 @@ color: #CD5C5C;;
 
 .projetos-header {
     float: left;
+    width: 30%;
+}
+
+.projetos-header h3 {
+    margin-top: 1em;
 }
 
 .styleprojetos{
