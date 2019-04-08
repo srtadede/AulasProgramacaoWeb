@@ -12,11 +12,12 @@ a {
 
 section img {
     width: 100%;
-    max-width: 300px;
+    max-width: 500px;
 }
 
+
 header{
-    border-bottom: 1px solid #CD5C5C;
+    border-bottom: 1px solid #256cba;
     padding-top: 1em;
     padding-bottom: 1em;
     position: fixed;
@@ -30,7 +31,7 @@ header ul {
 
 
 header li a {
-    color: #8B475D;
+    color: #256cba;
     font-weight: lighter;
     text-transform: uppercase;
 }
@@ -54,23 +55,28 @@ text-indent: -9999px;
 }
 
 #contato .email {
-background-image: url("../Imagens/email.png");
+background-image: url("../Imagens/e-mail.png");
+background-size: 48px 48px;
 }
 
 #contato .twitter {
     background-image: url("../Imagens/twitter.png");
+    background-size: 48px 48px;
 }
 
 #contato .fb {
     background-image: url("../Imagens/fb.png");
+    background-size: 48px 48px;
 }
 
-#contato .github {
-    background-image: url("../Imagens/github.png");
+#contato .instagram{
+    background-image: url("../Imagens/instagram.png");
+    background-size: 48px 48px;
 }
 
-#contato .linkedin {
-    background-image: url("../Imagens/linkedin.png");
+#contato .twitch {
+    background-image: url("../Imagens/twitch.png");
+    background-size: 48px 48px;
 }
 
 .container {
@@ -85,19 +91,8 @@ section{
 }
 
 .identificacao {
-    background-color: #8B475D;
-    color: #FFF0F5;
-    padding: 10em 2em 7em;
-}
-
-.identificacao h1{
-    font-size: 2.5em;
-    margin-bottom: 0.7em;
-}
-
-.identificacao h2 {
-    font-size: 1.5em;
-    font-weight: lighter;
+    background-image: url("../Imagens/fundo.jpg");
+    padding: 4em 1em 1em;
 }
 
 section h3 {
@@ -106,18 +101,23 @@ section h3 {
 }
 
 header li a {
-    color: #CD5C5C;
+    color: #256cba;
     font-weight: lighter;
 }
 
 .escuras {
-    background-color: #CD5C5C;
-    color: #FFF0F5;
+    background-color: #81c939;
+    color: #ffffff;
 }
 
 .claras{
-background-color: #fff0f5;
-color: #CD5C5C;;
+background-color: #b3c2fd;
+color: #256cba;;
+}
+
+.fundo {
+    color: #256cba;
+    background-image: url("../Imagens/fundo.jpg");
 }
 
 .projetos-header {
@@ -134,9 +134,9 @@ color: #CD5C5C;;
 }
 
 .styleprojetos li{
-    background-color: #FFA07A;
+    background-color: #e73e67;
     padding: 1em;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
 }    
 
 
@@ -148,22 +148,23 @@ color: #CD5C5C;;
 .styleprojetos li p{
     color: #fff0f5;
     margin-top: 0.5em; 
-    text-align: justify;
+    text-align: center;
     line-height: 1.2;
 }
 
 #sobre p.text{
     margin:1em;
     width: 50%;
-    text-align: justify;
+    text-align: center;
     line-height: 1.4;
 }
 
 #sobre p.bio{
-    color: #8B475D;
+    color: #256cba;
     font-size: 1.5em;
     margin: 1em;
     width: 50%;
+    text-align: center;
 }
 
 #sobre {
@@ -171,9 +172,9 @@ color: #CD5C5C;;
 }
 
 #sobre img{
-    width: 200px;
+    width: 180px;
     position: absolute;
-    top: 2.5em;
+    top: 2.1em;
     right: 10%;
 }
 
