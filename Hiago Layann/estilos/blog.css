@@ -1,0 +1,207 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+
+    background-image: url("../imagens/thumb-1920-310430.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width:100%;
+
+}
+
+a{
+   text-decoration:none; 
+}
+
+section img{
+    width: 100%;
+    max-width: 500px;
+}
+
+header {
+    border-bottom: 1px solid #ffff;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    width:100%;
+    height: 3em;
+   padding-bottom: 0%;
+   color: #0A2A12
+
+}
+
+header ul{
+    text-align: left;
+   
+}
+
+header li a{
+ 
+    color: #ffff;
+    font-weight: lighter;
+    text-transform: uppercase;
+    
+}
+
+
+.claras{
+color: #ffff;;
+}
+
+
+
+header li {
+    display: inline-block;
+    margin-left: 3em;
+}
+
+#contato li {
+    display: inline-block;
+    
+}
+
+#contato li a{
+    display: inline-block;
+    margin: 1em;
+    width:48px;
+    height: 48px;
+    text-indent:-9999px;
+    
+
+}
+
+#contato .email {
+    background-image: url("../Imagens/email.png");
+    background-size: 48px 48px;
+}
+
+#contato .face {
+    background-image: url("../Imagens/face.png");
+    background-size: 48px 48px;
+}
+
+#contato .twitter {
+    background-image: url("../imagens/twitter.png");
+    background-size: 48px 48px;
+}
+
+#contato .github {
+    background-image: url("../imagens/github.png");
+    background-size: 48px 48px;
+}
+
+
+.container {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+section {
+    padding-top: 2em;
+    padding-bottom: 4em;
+    text-align: center;
+}
+
+.identificacao {
+    color: #ffff;
+    padding: 4em 2em 3em;
+}
+
+.identificacao h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.7em;
+}
+
+.identificacao h2 {
+    font-size: 1.5em;
+    font-weight: lighter;
+}
+
+section h3 {
+    font-size: 1.7em;
+    margin-bottom: 0.5em;
+    color:#fff 
+}
+
+header li a {
+    color: #ffff;
+    font-weight: lighter;
+}
+.escuras {
+    background-color:#0A2A12;
+}
+  
+.projetos-header {
+    float: left;
+    width:30%;
+}
+.projetos-header h3{
+    margin-top:1em; 
+        color: #ffff;
+}
+
+.img-circle {
+    border-radius: 55%;
+    }
+    
+.styleprojetos  { 
+    margin-left:40%;
+}
+
+.styleprojetos li  {
+    background-color:#0A2A12;
+    opacity: 0.8;
+    padding: 1em;
+    margin-bottom:2em;
+
+}
+
+.styleprojetos li a {
+    color: #ffffff;
+    font-size: 1.3em;
+    
+}
+
+.styleprojetos li p {
+    color: #ffff;
+    margin-top: 0.5em;
+    text-align: center;
+    line-height: 1.2;
+}
+
+#sobre p.text {
+    margin: 1em;
+    width: 50%;
+    text-align: justify;
+    line-height: 1.4;
+    color: #ffff;
+}
+
+#sobre p.bio {
+    color: #ffff;
+    font-size: 1.5em;
+    margin: 1em;
+    width:50%;
+    text-align: center;
+}
+
+#sobre{
+    position: relative;
+
+}
+
+#sobre img {
+    width: 228px;
+    position: absolute;
+    top:5em;
+    right: 17%;
+}
+
+footer {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color:#ffff;
+
+}
