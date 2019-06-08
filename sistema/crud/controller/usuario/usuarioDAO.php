@@ -26,5 +26,24 @@ if(isset($_GET['excluir'])){
     header ('Location: usuario.php');
 }
 
+if(isset($_GET['editar'])){
+    $id = $_GET['editar'];
+    $resultado = $conexão->query("SELECT * FROM usuario WHERE id=$id") or die($conexão->error);
+    if(count($resultado) == 1){
+        $row = $resultado->fetch_array();
+        $usuario = $row['usuario'];
+        $senha = $row['senha'];
+        $id = $row['id'];
+    }
+}
+
+if(isset($_POST['atualizar'])){
+    $usuario = $_POST['usuario'];
+    $senha = $_POST['senha'];
+
+    $conexao->query("UPDATE usuario SET usuario='$usuario', senha='$senha' WHERE id='$id'") or die($conexao->error);
+
+    header ('Location: usuario.php');
+}
 
 ?>
