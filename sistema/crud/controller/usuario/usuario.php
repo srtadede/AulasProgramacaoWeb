@@ -3,44 +3,46 @@
 
 <head>
    <?php
-   require_once ('../../view/head.php');
+   require_once '../../view/head.php';
    ?>
 </head>
 
 <body>
-<?php
-   require_once ('../../view/nav.php');
-   require_once ('usuarioDAO.php');
+   <?php
+   require_once '../../view/nav.php';
+   require_once 'usuarioDAO.php';
    ?>
 
    <div class="container">
-   <div class="row justify-content-center bg-light">
-       <form action="usuarioDAO.php" method="POST">
-       <input type="hidden" name="id" value="<?php echo $usuario?>" >
-           <div class="form-group">
-               <label>Usuário</label>
-               <input type="text" class="form-control" value="<?php echo $usuario?>" name="usuario" id="usuario">
-           </div>
-           <div class="form-group">
-               <label>Senha</label>
-               <input type="password" class="form-control" value="<?php echo $senha?> name="senha" id="senha">
-           </div>
-            <div class="form-group">
-            <?php if($id != 0) :?>
-            <button  type="submit" class="btn btn-info" name="atualizar"> Atualizar </button> 
-            <?php else : ?>
-            <button  type="submit" class="btn btn-primary" name="salvar"> Salvar </button> 
+       <div class="row justify-content-center bg-light">
+           <form action="usuarioDAO.php" method="POST">
+                <input type="hidden" name="id" value="<?php echo $id ?>">
+               <div class="form-group">
+                   <label>Usuário</label>
+                   <input type="text" class="form-control" value="<?php echo $usuario ?>" name="usuario" id="usuario">
+               </div>
+               <div class="form-group">
+                   <label>Senha</label>
+                   <input type="password" class="form-control" value="<?php echo $usuario ?>" name="senha" id="senha">
+               </div>
+
+               <div class="form-group">
+
+        <?php if($id != 0) :?>
+            <button type="submit" class="btn btn-info" name="atualizar">Atualizar</button>
+<?php else: ?>
+             <button type="submit" class="btn btn-primary" name="salvar">Salvar</button>
 <?php endif; ?>
-</div>
-       </form>
-</div>
+               </div>
+           </form>
+       </div>
 
-<?php
-require_once ('../banco/conexao.php');
-$resultado = $conexao->query("SELECT * FROM usuario") or die (mysqli_error($conexao));
-?>
+       <?php
+       require_once('../banco/conexao.php');
+       $resultado = $conexao->query("SELECT * FROM usuario") or die(mysqli_error($conexao));
+       ?>
 
-<div class="row justify-content-center">
+       <div class="row justify-content-center">
            <table class="table">
                <thead>
                    <tr>
@@ -67,7 +69,11 @@ $resultado = $conexao->query("SELECT * FROM usuario") or die (mysqli_error($cone
        </div>
 
 
-</div>
+
+
+   </div>
+
 </body>
+
 
 </html>

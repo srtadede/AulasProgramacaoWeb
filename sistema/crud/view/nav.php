@@ -12,13 +12,13 @@
                         Cadastro
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Usuários</a>
+                        <a class="dropdown-item" href="/sistema/crud/controller/usuario/usuario.php">Usuários</a>
                         <a class="dropdown-item" href="#">Notícias</a>
                     </div>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Sair</a>
+                    <a class="nav-link" href="/sistema/crud/controller/autenticar/sair.php">Sair</a>
                 </li>
             </ul>
         </div>
